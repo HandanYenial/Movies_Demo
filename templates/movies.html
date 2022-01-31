@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title%} Movies List {%endblock%}
+
+{%block content%}
+<body>
+    <h1>All Movies</h1>
+
+   <!-- {%for messages in get_flashed_messages()%}
+
+        <p>{{messages}}</p>
+
+    {%endfor%}
+This part is for flash messages, incase we need to use it in different routes, 
+we moved it to base.html -->
+
+    <ul>   <!--Writing a loop for listing all movie names-->
+        {%for movie in movies%}
+        <li>{{movie}}</li> <!--That shows the movies as a list-->
+
+        {%endfor%}
+    </ul>
+
+    <form action="/movies/new" method="POST">
+        <input type="text" placeholser="Movie title" name="title">
+        <button>Submit</button>
+    </form>
+    
+{%endblock%}

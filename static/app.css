@@ -1,0 +1,54 @@
+h1{
+    color:orange;
+
+}
+
+body{
+    background-color:aquamarine;
+    padding:0;
+    margin:0;
+
+}
+
+#content{
+    margin:40px;
+    
+}
+
+.navbar{
+    background-color:rgb(226, 123, 123);
+    overflow: hidden;
+
+}
+
+.navbar a{
+    float:left;
+    color:blue;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+
+.navbar a:hover{
+    background-color:white;
+    color: black;
+
+}
+
+.messages p{
+    padding: 1rem;
+    font: size 1.5rem;
+    border-radius:1 rem;
+
+}
+
+.messages .success{
+    background-color: rgb(171, 250, 171)
+
+}
+
+.messages .error{
+     background-color:rgb(245, 128, 128);
+
+}
